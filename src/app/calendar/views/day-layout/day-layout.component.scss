@@ -1,0 +1,74 @@
+.day-layout {
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25rem;
+    margin: 1rem;
+  }
+
+  &__body {
+    height: 80vh;
+    display: flex;
+    overflow-y: scroll;
+  }
+
+  &__aside {
+    flex: .15;
+    background: #fafafa;
+  }
+
+  &__article {
+    flex: 1.85;
+  }
+
+}
+
+.article {
+
+  &__static-time {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    background-color: #fafafa;
+  }
+  &__static-time-element {
+    display: block;
+    text-align: end;
+    padding-right: .5rem;
+    height: 100px;
+  }
+
+  &__columns {
+    height: 100px;
+    border: 1px solid #fafafa;
+
+  }
+
+}
+
+.header-wrapper {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.form {
+  &__header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__block {
+    display: flex;
+  }
+}
+

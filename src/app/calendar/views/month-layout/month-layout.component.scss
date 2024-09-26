@@ -1,0 +1,60 @@
+
+.month-layout {
+  display: flex;
+  justify-content: center;
+}
+
+.calendar{ 
+
+  width: 875px;
+
+  &__week-days {
+    display: flex;
+  }
+
+  &__week-day {
+    text-align: center;
+  }
+
+  &__grid{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__day, &__week-day  {
+    width: 125px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #c9c9c9;
+    border-bottom: 1px solid #c9c9c9;
+  }
+
+}
+
+.currentDay {
+  color: coral;
+  font-weight: 500;
+}
+
+.normalDay {
+  position: relative;
+  font-size: 1.25rem;
+  transition: all .15s ease-in-out;
+
+  &:hover {
+    background-color: #fafafa;
+    font-size: 1.30rem;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    width: 8px;
+    height: 8px;
+    background-color: #d7d7d7;
+    border-radius: 50%;
+  }
+}
